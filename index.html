@@ -1,0 +1,130 @@
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_Galeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        :root{--granate:#400101;
+            --rojo: #3a49ac;
+            --naranja:#1ba2ba;
+            --azul-bg:#f1833e;
+            --rosa-bg:#F2B29B;
+            --titulo-obra: 'Abril Fatface', cursive;
+            --autor-fecha: 'PT Serif', serif;}
+        
+        img{width: 100%;}
+        h1{font-family: var(var(--titulo-obra));
+            color: var(--rojo);
+            font-size: 1.5em} 
+        h2,p{font-family: var(--autor-fecha);}
+        h2{color: var(--naranja);
+                font-weight: 700;
+                font-size: 1em}
+        p{color: black;
+            font-weight: 400;
+            font-size: 0.7em;}
+        .galeria{display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+            padding: 2em;}
+        .card{transition: flex-grow 0.5s;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            border: 0.3em solid var(--azul-bg);
+            background-color: var(--azul-bg);
+            flex-basis: 23%;}
+        .card:nth-child(4){flex-grow: 1;}
+        .card:nth-child(2){
+            flex-grow: 1;}
+        .card_img{width: 100%;
+            height: 350px;}
+        .card_img img{object-fit: cover;
+            height: 100%;}
+        .card:hover{box-shadow: 0.1em 0.1em 0.5em var(--granate);
+            flex-grow: 1;}
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="galeria">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/01.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Gustav Klimt</h1>
+                    <h2>El Beso </h2>                                                            
+                    <p>La obra representa a dos amantes a tamaño natural que están rodeados de oro. Es un ejemplo claro de “Periodo Dorado” de Klimt, inspirado en los mosaicos bizantinos que habían impresionado al artista en su viaje a Rávena. Los dos amantes se besan entre esa lluvia de oro y una naturaleza que los cubre de arriba a abajo.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/02.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Jacques-Louis David</h1>
+                    <h2>'La muerte de Marat'</h2>                                                                           
+                    <p>Jean Paul-Marat, líder revolucionario francés y uno de los artífices del reinado del Terror, era amigo personal de Jacques-Louis David, quien tuvo apenas cuatro meses para crear una obra que homenajea para siempre a su compañero. El magnífico óleo, que se exhibe en Bruselas, pertenece al estilo neoclásico, muy de moda en aquel momento (1793). En la imagen vemos a un Marat apuñalado en la misma bañera donde se relajaba. Le vemos con un turbante, pues se lo empapó en vinagre para aliviar unas erupciones que le salían por ser celíaco.todos los colores, adelantándose a corrientes artísticas muy posteriores.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/03.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Rafael</h1>
+                    <h2>'La escuela de Atenas'</h2>                                              
+                    <p>Este maravilloso fresco se encuentra en la Estancia de la Signatura del palacio del Vaticano, que en la época en la que fue decorada por Rafael (1510-1512) solía ser una biblioteca. En esta espectacular obra quiso representar el origen del pensamiento occidental, la antigua Grecia, y pintó un espacio de arquitectura clásica en la que podemos ver a Platón y Aristóteles en el centro. Pero Rafael no solo quiso hacer un catálogo de personajes sino dejar patente la filosofía de cada uno. Así, Platón, que es más idealista, señala con su pulgar al cielo; Aristóteles, que creía en un pensamiento real y físico, a la tierra.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/04.png" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Pablo Picasso</h1>
+                    <h2>'Las señoritas de Avignon'</h2> 
+                    <p>Pablo Picasso creó un nuevo género en la pintura, el cubismo, con esta magnífica obra de 1906-1907. “Las señoritas de Avignon'' supone una ruptura radical con la composición y la perspectiva tradicional de la pintura y nos presenta cinco mujeres, cinco prostitutas barcelonesas de la calle Avinyó, donde abundaban los burdeles. El espacio en el que se ubican las figuras parece proyectarse hacia delante mientras que un bodegón de frutas reposa sobre una mesa que parece despegarse hacia arriba. La idea es romper con el realismo y apostar por planos angulares. En los primeros estudios de Picasso para la obra, la figura de la izquierda era un hombre, pero cambió el detalle al final.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/05.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>El Bosco</h1>
+                    <h2>'El jardín de las delicias'</h2>                                        
+                    <p>El rey Felipe II era un entusiasta de la obra de El Bosco y adquirió este tríptico para que decorara las paredes del monasterio del Escorial -en la localidad de San Lorenzo del Escorial, uno de los pueblos más bonitos cerca de Madrid para pasar el día-, donde permaneció hasta la Guerra Civil y ya en 1939 entró a formar parte de la colección del Prado. La obra se pintó entre 1500 y 1505 y cerrada representa el final del tercer día de la Creación, con una tierra plana rodeada por agua y abundante vegetación, envuelta en una esfera translúcida. Al desplegarla, se convierte en un tríptico: el izquierdo representa el paraíso terrenal y la creación del ser humano (vemos a Dios, Adán y Eva); el central es una representación de la lujuria, y en ella vemos al mundo entregado al pecado, con figuras de fuerte contenido sexual y erótico; el de la derecha es finalmente el infierno o infierno musical porque comprobamos la enorme presencia de instrumentos musicales para torturar a los pecadores, culpables de todos los pecados capitales.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/06.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Wassily Kandinsky</h1>
+                    <h2>Composición VII</h2>
+                    <p>Creado por Kandinsky en 1913, este lienzo se considera una de las obras cumbre del arte abstracto. Supone una continuación de las Composiciones V y VI, las tres entrelazadas por un tema común: el Apocalipsis. En este caso, el diluvio, el juicio final, la resurrección y el jardín del amor serán el trasfondo. La mirada del espectador parte de la zona inferior izquierda a la esquina superior derecha en todo un huracán compositivo. Los colores vivos y claros predominan en el lienzo, al contrario que en los anteriores, a modo de transición y liberación. El paso de lo material a lo espiritual. A razón de sus composiciones, el propio Kandisky las definía como expresiones de sentimientos que se iban formando en su interior.
+                    </p>
+                </header>
+            </div>
+    </div>
+    </main>
+</body>
+</html>
